@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 
 struct TripLeadView: View {
+    @StateObject var viewModel: TripLeadViewModel = .init()
     let walkingRoute: [CLLocationCoordinate2D] = [
         CLLocationCoordinate2D(latitude: 40.836456,longitude: 14.307014),
         CLLocationCoordinate2D(latitude: 40.835654,longitude: 14.304346),
@@ -30,73 +31,22 @@ struct TripLeadView: View {
                     }
                     .mapControlVisibility(.hidden)
                     
-                    
-                    HStack{
-                        Text("Trip Lead")
-                            .font(.largeTitle)
-                            .padding(.trailing)
-                        
-                        Button {
-                            // TODO: Implement on click
-                        } label: {
-                            Image("share_icon")
-                                .resizable()
-                                .scaledToFit()
-                                .padding(.bottom, 4)
-                                .frame(maxWidth: 32, maxHeight: 32)
-                        }
-                        Spacer()
-                        Image("broadcast")
-                            .resizable()
-                            .scaledToFit()
-                            .padding(.bottom, 4)
-                            .frame(maxWidth: 32, maxHeight: 32)
-                    }
-                    .padding([.horizontal, .bottom])
-                    .background(Color.white.opacity(0.6))
-                    .frame(maxWidth: .infinity)
+                    TripLeadTopBarView(viewModel: viewModel)
                 }
                 
                 HStack{
-                    Button {
-                        // TODO: Implement on click
-                    } label: {
-                        Image("pause")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(maxWidth: 64, maxHeight: 64)
+                    TripLeadViewButton(source: "pause") {
+                        viewModel.send(.PauseTrip)
                     }
                     
                     Spacer()
-                    Button {
-                        // TODO: Implement on click
-                    } label: {
-                        Image("stop_sign")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(maxWidth: 64, maxHeight: 64)
+                    TripLeadViewButton(source: "stop_sign") {
+                        viewModel.send(.StopTrip)
                     }
                 }
-                .padding(.bottom, 48)
-                .padding(.horizontal)
-                .frame(maxWidth: .infinity)
+                .padding([.bottom, .horizontal])
             }
-            
-            VStack {
-                Text("Trip ID: 12345")
-                    .padding(.top, 8)
-                
-                HStack {
-                    Text("Distance:")
-                    Spacer()
-                    Text("Elapsed")
-                }
-                
-                Text("Trip Start:")
-            }
-            .padding(.horizontal)
-            .frame(maxWidth: .infinity)
-            .background(Color.gray.opacity(0.1))
+            TripLeadStatsBarView(viewModel: viewModel)
         }
     }
 }
