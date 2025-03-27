@@ -23,8 +23,8 @@ struct FollowMe_iOSApp: App {
     
     var body: some Scene {
         WindowGroup {
-            Router()
-                .environmentObject(dependencies)
+            let router = Router(dependencies: dependencies)
+            router.makeLandingView()
         }
     }
 }

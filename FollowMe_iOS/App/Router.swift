@@ -8,14 +8,20 @@
 import Foundation
 import SwiftUICore
 
-struct Router: View {
-    @EnvironmentObject var dependencies: AppDependencies
-
-    var body: some View {
+@MainActor
+struct Router{
+    let dependencies: AppDependencies
+    
+    func makeLandingView() -> some View {
         LandingView(
             viewModel: LandingViewModel(
                 repository: dependencies.authRepository
-            )
+            ),
+            router: self
         )
+    }
+    
+    func makeTripLeadView() -> some View {
+        TripLeadView()
     }
 }

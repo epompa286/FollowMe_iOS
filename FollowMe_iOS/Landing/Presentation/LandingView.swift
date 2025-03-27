@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LandingView: View {
     @StateObject var viewModel: LandingViewModel
+    let router: Router
     
     var body: some View {
         NavigationStack {
@@ -34,13 +35,14 @@ struct LandingView: View {
                 LoginView(viewModel: viewModel)
             }
             .navigationDestination(isPresented: $viewModel.state.activeDestination) {
-                TripLeadView()
+                router.makeTripLeadView()
             }
         }
     }
 }
 
 #Preview {
-    @Previewable @EnvironmentObject var viewModel: LandingViewModel
-    LandingView(viewModel: viewModel)
+    let dependencies = AppDependencies()
+    let router = Router(dependencies: dependencies)
+    router.makeLandingView()
 }
