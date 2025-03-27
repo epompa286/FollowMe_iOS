@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F3212FA2D93E4100092DFAD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9F3212F92D93E4100092DFAD /* FirebaseAnalytics */; };
+		9F3213062D949E650092DFAD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9F3213052D949E650092DFAD /* FirebaseAuth */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F90AAC12D9370E100CDDC39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F90AAA82D9370E000CDDC39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F90AAAF2D9370E000CDDC39;
+			remoteInfo = FollowMe_iOS;
+		};
+		9F90AACB2D9370E100CDDC39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F90AAA82D9370E000CDDC39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F90AAAF2D9370E000CDDC39;
+			remoteInfo = FollowMe_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F3212EC2D93DF320092DFAD /* FollowMe-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FollowMe-iOS-Info.plist"; sourceTree = "<group>"; };
+		9F90AAB02D9370E000CDDC39 /* FollowMe_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FollowMe_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F90AAC02D9370E100CDDC39 /* FollowMe_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FollowMe_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F90AACA2D9370E100CDDC39 /* FollowMe_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FollowMe_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9F90AAB22D9370E000CDDC39 /* FollowMe_iOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FollowMe_iOS;
+			sourceTree = "<group>";
+		};
+		9F90AAC32D9370E100CDDC39 /* FollowMe_iOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FollowMe_iOSTests;
+			sourceTree = "<group>";
+		};
+		9F90AACD2D9370E100CDDC39 /* FollowMe_iOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FollowMe_iOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F90AAAD2D9370E000CDDC39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F3212FA2D93E4100092DFAD /* FirebaseAnalytics in Frameworks */,
+				9F3213062D949E650092DFAD /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F90AABD2D9370E100CDDC39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F90AAC72D9370E100CDDC39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F3213042D949E650092DFAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F90AAA72D9370E000CDDC39 = {
+			isa = PBXGroup;
+			children = (
+				9F3212EC2D93DF320092DFAD /* FollowMe-iOS-Info.plist */,
+				9F90AAB22D9370E000CDDC39 /* FollowMe_iOS */,
+				9F90AAC32D9370E100CDDC39 /* FollowMe_iOSTests */,
+				9F90AACD2D9370E100CDDC39 /* FollowMe_iOSUITests */,
+				9F3213042D949E650092DFAD /* Frameworks */,
+				9F90AAB12D9370E000CDDC39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F90AAB12D9370E000CDDC39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F90AAB02D9370E000CDDC39 /* FollowMe_iOS.app */,
+				9F90AAC02D9370E100CDDC39 /* FollowMe_iOSTests.xctest */,
+				9F90AACA2D9370E100CDDC39 /* FollowMe_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F90AAAF2D9370E000CDDC39 /* FollowMe_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F90AAD42D9370E100CDDC39 /* Build configuration list for PBXNativeTarget "FollowMe_iOS" */;
+			buildPhases = (
+				9F90AAAC2D9370E000CDDC39 /* Sources */,
+				9F90AAAD2D9370E000CDDC39 /* Frameworks */,
+				9F90AAAE2D9370E000CDDC39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9F90AAB22D9370E000CDDC39 /* FollowMe_iOS */,
+			);
+			name = FollowMe_iOS;
+			packageProductDependencies = (
+				9F3212F92D93E4100092DFAD /* FirebaseAnalytics */,
+				9F3213052D949E650092DFAD /* FirebaseAuth */,
+			);
+			productName = FollowMe_iOS;
+			productReference = 9F90AAB02D9370E000CDDC39 /* FollowMe_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F90AABF2D9370E100CDDC39 /* FollowMe_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F90AAD72D9370E100CDDC39 /* Build configuration list for PBXNativeTarget "FollowMe_iOSTests" */;
+			buildPhases = (
+				9F90AABC2D9370E100CDDC39 /* Sources */,
+				9F90AABD2D9370E100CDDC39 /* Frameworks */,
+				9F90AABE2D9370E100CDDC39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F90AAC22D9370E100CDDC39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9F90AAC32D9370E100CDDC39 /* FollowMe_iOSTests */,
+			);
+			name = FollowMe_iOSTests;
+			packageProductDependencies = (
+			);
+			productName = FollowMe_iOSTests;
+			productReference = 9F90AAC02D9370E100CDDC39 /* FollowMe_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F90AAC92D9370E100CDDC39 /* FollowMe_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F90AADA2D9370E100CDDC39 /* Build configuration list for PBXNativeTarget "FollowMe_iOSUITests" */;
+			buildPhases = (
+				9F90AAC62D9370E100CDDC39 /* Sources */,
+				9F90AAC72D9370E100CDDC39 /* Frameworks */,
+				9F90AAC82D9370E100CDDC39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F90AACC2D9370E100CDDC39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9F90AACD2D9370E100CDDC39 /* FollowMe_iOSUITests */,
+			);
+			name = FollowMe_iOSUITests;
+			packageProductDependencies = (
+			);
+			productName = FollowMe_iOSUITests;
+			productReference = 9F90AACA2D9370E100CDDC39 /* FollowMe_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F90AAA82D9370E000CDDC39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					9F90AAAF2D9370E000CDDC39 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					9F90AABF2D9370E100CDDC39 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9F90AAAF2D9370E000CDDC39;
+					};
+					9F90AAC92D9370E100CDDC39 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9F90AAAF2D9370E000CDDC39;
+					};
+				};
+			};
+			buildConfigurationList = 9F90AAAB2D9370E000CDDC39 /* Build configuration list for PBXProject "FollowMe_iOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F90AAA72D9370E000CDDC39;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9F3212F82D93E35D0092DFAD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9F90AAB12D9370E000CDDC39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F90AAAF2D9370E000CDDC39 /* FollowMe_iOS */,
+				9F90AABF2D9370E100CDDC39 /* FollowMe_iOSTests */,
+				9F90AAC92D9370E100CDDC39 /* FollowMe_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F90AAAE2D9370E000CDDC39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F90AABE2D9370E100CDDC39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F90AAC82D9370E100CDDC39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F90AAAC2D9370E000CDDC39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F90AABC2D9370E100CDDC39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F90AAC62D9370E100CDDC39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F90AAC22D9370E100CDDC39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F90AAAF2D9370E000CDDC39 /* FollowMe_iOS */;
+			targetProxy = 9F90AAC12D9370E100CDDC39 /* PBXContainerItemProxy */;
+		};
+		9F90AACC2D9370E100CDDC39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F90AAAF2D9370E000CDDC39 /* FollowMe_iOS */;
+			targetProxy = 9F90AACB2D9370E100CDDC39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9F90AAD22D9370E100CDDC39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F90AAD32D9370E100CDDC39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F90AAD52D9370E100CDDC39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FollowMe_iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = AESQ4Z2K5T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FollowMe-iOS-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.pompa.edgar.FollowMe-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F90AAD62D9370E100CDDC39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FollowMe_iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = AESQ4Z2K5T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FollowMe-iOS-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.pompa.edgar.FollowMe-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F90AAD82D9370E100CDDC39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AESQ4Z2K5T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.pompa.edgar.FollowMe-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FollowMe_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FollowMe_iOS";
+			};
+			name = Debug;
+		};
+		9F90AAD92D9370E100CDDC39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AESQ4Z2K5T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.pompa.edgar.FollowMe-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FollowMe_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FollowMe_iOS";
+			};
+			name = Release;
+		};
+		9F90AADB2D9370E100CDDC39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AESQ4Z2K5T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.pompa.edgar.FollowMe-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FollowMe_iOS;
+			};
+			name = Debug;
+		};
+		9F90AADC2D9370E100CDDC39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AESQ4Z2K5T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.pompa.edgar.FollowMe-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FollowMe_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F90AAAB2D9370E000CDDC39 /* Build configuration list for PBXProject "FollowMe_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F90AAD22D9370E100CDDC39 /* Debug */,
+				9F90AAD32D9370E100CDDC39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F90AAD42D9370E100CDDC39 /* Build configuration list for PBXNativeTarget "FollowMe_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F90AAD52D9370E100CDDC39 /* Debug */,
+				9F90AAD62D9370E100CDDC39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F90AAD72D9370E100CDDC39 /* Build configuration list for PBXNativeTarget "FollowMe_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F90AAD82D9370E100CDDC39 /* Debug */,
+				9F90AAD92D9370E100CDDC39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F90AADA2D9370E100CDDC39 /* Build configuration list for PBXNativeTarget "FollowMe_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F90AADB2D9370E100CDDC39 /* Debug */,
+				9F90AADC2D9370E100CDDC39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F3212F82D93E35D0092DFAD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F3212F92D93E4100092DFAD /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F3212F82D93E35D0092DFAD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9F3213052D949E650092DFAD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F3212F82D93E35D0092DFAD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9F90AAA82D9370E000CDDC39 /* Project object */;
+}
