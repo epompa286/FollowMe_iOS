@@ -33,16 +33,16 @@ enum LandingViewAction { // TODO: Might chance action name
 
 final class LandingViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var state = LandingViewState()
-    var auth: any AuthRepository
+    var auth: FirebaseAuthRepository
     
     private var locationManager: CLLocationManager?
     private var locationContinuation: CheckedContinuation<Bool, Never>?
     
     let logger = Logger(subsystem: "com.yourcompany.yourapp", category: "network")
     
-    init(repository: any AuthRepository) {
+    init(repository: FirebaseAuthRepository) {
         self.auth = repository
-    }
+    } 
     
     func send(_ intent: LandingViewAction) {
         switch intent {

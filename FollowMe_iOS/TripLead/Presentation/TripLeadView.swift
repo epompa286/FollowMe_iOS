@@ -17,7 +17,7 @@ struct TripLeadView: View {
     ]
     
     var body: some View {
-        VStack {
+        VStack (spacing: 0) {
             ZStack(alignment: .bottom) {
                 ZStack (alignment: .top) {
                     Map {
@@ -51,21 +51,6 @@ struct TripLeadView: View {
                             .scaledToFit()
                             .padding(.bottom, 4)
                             .frame(maxWidth: 32, maxHeight: 32)
-                            Image(systemName: "square.and.arrow.up")
-                                .resizable()
-                                .padding(.bottom, 4)
-                                .frame(maxWidth: 32, maxHeight: 32)
-                        }
-                        
-                        Spacer()
-                        Button {
-                            // TODO: Implement on click
-                        } label: {
-                            Image(systemName: "wave.3.up")
-                                .resizable()
-                                .padding(.bottom, 4)
-                                .frame(maxWidth: 32, maxHeight: 32)
-                        }
                     }
                     .padding([.horizontal, .bottom])
                     .background(Color.white.opacity(0.6))
@@ -79,10 +64,6 @@ struct TripLeadView: View {
                         Image("pause")
                             .resizable()
                             .scaledToFit()
-                        Image(systemName: "pause.circle")
-                            .resizable()
-                        Image(systemName: "pause.circle")
-                            .resizable()
                             .frame(maxWidth: 64, maxHeight: 64)
                     }
                     
@@ -93,10 +74,6 @@ struct TripLeadView: View {
                         Image("stop_sign")
                             .resizable()
                             .scaledToFit()
-                        Image(systemName: "stop.circle")
-                            .resizable()
-                        Image(systemName: "stop.circle")
-                            .resizable()
                             .frame(maxWidth: 64, maxHeight: 64)
                     }
                 }
@@ -104,6 +81,7 @@ struct TripLeadView: View {
                 .padding(.horizontal)
                 .frame(maxWidth: .infinity)
             }
+            
             VStack {
                 Text("Trip ID: 12345")
                     .padding(.top, 8)
@@ -118,14 +96,9 @@ struct TripLeadView: View {
             }
             .padding(.horizontal)
             .frame(maxWidth: .infinity)
-            Group{
-                Spacer()
-                Text("12:34")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-            }
-            .background(.gray.opacity(0.4))
+            .background(Color.gray.opacity(0.1))
         }
+    }
 }
 
 #Preview {

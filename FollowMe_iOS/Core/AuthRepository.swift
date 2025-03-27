@@ -8,8 +8,8 @@
 import Foundation
 
 protocol AuthRepository {
-    var currentUserEmail: String? { get }
-    
-    func signIn(email: String, password: String, completion: @escaping (Result<Bool, Error>) -> Void)
-    func signUp(email: String, password: String, completion: @escaping (Result<Bool, Error>) -> Void)
+    associatedtype _User
+    var currentUser: _User? { get }
+    func signIn(email: String, password: String, completion: @escaping (Result<_User, Error>) -> Void)
+    func signUp(email: String, password: String, completion: @escaping (Result<_User, Error>) -> Void)
 }

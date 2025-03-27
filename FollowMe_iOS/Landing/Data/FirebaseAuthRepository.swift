@@ -9,25 +9,26 @@ import Foundation
 import FirebaseAuth
 
 class FirebaseAuthRepository: AuthRepository {
-    var currentUserEmail: String? = nil
+    typealias _User = FirebaseAuth.User
+    var currentUser: FirebaseAuth.User? = nil
     
-    func signIn(email: String, password: String, completion: @escaping (Result<Bool, Error>) -> Void) {
+    func signIn(email: String, password: String, completion: @escaping (Result<FirebaseAuth.User, Error>) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             if let error = error {
                 completion(.failure(error))
             } else if let user = authResult?.user {
-                self.currentUserEmail = user.email
-                completion(.success(user.isEmailVerified))
+                self.currentUser = user
+                completion(.success(user))
             }
         }
     }
 
-    func signUp(email: String, password: String, completion: @escaping (Result<Bool, Error>) -> Void) {
+    func signUp(email: String, password: String, completion: @escaping (Result<FirebaseAuth.User, Error>) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let error = error {
                 completion(.failure(error))
             } else if let user = authResult?.user {
-                completion(.success(user.isEmailVerified))
+                completion(.success(user))
             }
         }
     }

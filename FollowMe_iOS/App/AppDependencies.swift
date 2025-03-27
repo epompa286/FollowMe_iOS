@@ -9,7 +9,7 @@ import Foundation
 
 @MainActor
 final class AppDependencies: ObservableObject {
-    let authRepository: AuthRepository
+    let authRepository: FirebaseAuthRepository
     
     init() {
         self.authRepository = FirebaseAuthRepository()

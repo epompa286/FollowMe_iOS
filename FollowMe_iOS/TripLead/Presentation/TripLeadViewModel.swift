@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreMedia
 
 struct TripLeadState {
     let tripPoints: [TripPoint] = []

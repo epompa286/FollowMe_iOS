@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9F3212FA2D93E4100092DFAD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9F3212F92D93E4100092DFAD /* FirebaseAnalytics */; };
 		9F3213062D949E650092DFAD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9F3213052D949E650092DFAD /* FirebaseAuth */; };
+		9F3213232D952DE90092DFAD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9F3213222D952DE90092DFAD /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			files = (
 				9F3212FA2D93E4100092DFAD /* FirebaseAnalytics in Frameworks */,
 				9F3213062D949E650092DFAD /* FirebaseAuth in Frameworks */,
+				9F3213232D952DE90092DFAD /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +133,7 @@
 			packageProductDependencies = (
 				9F3212F92D93E4100092DFAD /* FirebaseAnalytics */,
 				9F3213052D949E650092DFAD /* FirebaseAuth */,
+				9F3213222D952DE90092DFAD /* FirebaseFirestore */,
 			);
 			productName = FollowMe_iOS;
 			productReference = 9F90AAB02D9370E000CDDC39 /* FollowMe_iOS.app */;
@@ -606,6 +609,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9F3212F82D93E35D0092DFAD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		9F3213222D952DE90092DFAD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F3212F82D93E35D0092DFAD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
