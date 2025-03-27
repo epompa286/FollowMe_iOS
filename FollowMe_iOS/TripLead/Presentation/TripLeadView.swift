@@ -27,14 +27,9 @@ struct TripLeadView: View {
                             .tint(.green)
                         Marker("Start", coordinate: walkingRoute.last!)
                             .tint(.red)
-<<<<<<< HEAD
-                        
                     }
                     .mapControlVisibility(.hidden)
                     
-=======
-                    }
->>>>>>> main
                     
                     HStack{
                         Text("Trip Lead")
@@ -44,7 +39,6 @@ struct TripLeadView: View {
                         Button {
                             // TODO: Implement on click
                         } label: {
-<<<<<<< HEAD
                             Image("share_icon")
                                 .resizable()
                                 .scaledToFit()
@@ -57,7 +51,6 @@ struct TripLeadView: View {
                             .scaledToFit()
                             .padding(.bottom, 4)
                             .frame(maxWidth: 32, maxHeight: 32)
-=======
                             Image(systemName: "square.and.arrow.up")
                                 .resizable()
                                 .padding(.bottom, 4)
@@ -73,7 +66,6 @@ struct TripLeadView: View {
                                 .padding(.bottom, 4)
                                 .frame(maxWidth: 32, maxHeight: 32)
                         }
->>>>>>> main
                     }
                     .padding([.horizontal, .bottom])
                     .background(Color.white.opacity(0.6))
@@ -84,14 +76,13 @@ struct TripLeadView: View {
                     Button {
                         // TODO: Implement on click
                     } label: {
-<<<<<<< HEAD
                         Image("pause")
                             .resizable()
                             .scaledToFit()
-=======
                         Image(systemName: "pause.circle")
                             .resizable()
->>>>>>> main
+                        Image(systemName: "pause.circle")
+                            .resizable()
                             .frame(maxWidth: 64, maxHeight: 64)
                     }
                     
@@ -99,14 +90,13 @@ struct TripLeadView: View {
                     Button {
                         // TODO: Implement on click
                     } label: {
-<<<<<<< HEAD
                         Image("stop_sign")
                             .resizable()
                             .scaledToFit()
-=======
                         Image(systemName: "stop.circle")
                             .resizable()
->>>>>>> main
+                        Image(systemName: "stop.circle")
+                            .resizable()
                             .frame(maxWidth: 64, maxHeight: 64)
                     }
                 }
@@ -114,8 +104,6 @@ struct TripLeadView: View {
                 .padding(.horizontal)
                 .frame(maxWidth: .infinity)
             }
-            
-<<<<<<< HEAD
             VStack {
                 Text("Trip ID: 12345")
                     .padding(.top, 8)
@@ -130,17 +118,14 @@ struct TripLeadView: View {
             }
             .padding(.horizontal)
             .frame(maxWidth: .infinity)
-=======
             Group{
                 Spacer()
                 Text("12:34")
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
->>>>>>> main
             .background(.gray.opacity(0.4))
         }
-    }
 }
 
 #Preview {
