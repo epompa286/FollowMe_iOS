@@ -32,10 +32,12 @@ struct LandingView: View {
             .background(Color("BackgroundColor"))
             .opacity(viewModel.state.isVerifyingPermissions ? 0.3 : 1)
             .sheet(isPresented: $viewModel.state.isLoginScreenPresented) {
-                LoginView(viewModel: viewModel)
+                LoginView()
+                    .environmentObject(viewModel)
             }
             .navigationDestination(isPresented: $viewModel.state.activeDestination) {
                 router.makeTripLeadView()
+                    .toolbar(.hidden)
             }
         }
     }

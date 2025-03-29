@@ -5,11 +5,14 @@
 //  Created by Edgar Pompa on 3/26/25.
 //
 
-import Foundation
-import CoreMedia
+import CoreLocation
+import MapKit
+import Combine
+import SwiftUI
 
 struct TripLeadState {
-    let tripPoints: [TripPoint] = []
+    var coordinates: [CLLocationCoordinate2D] = []
+    var course: Double = 0.0
     var tripId: String? = nil
     var distance: Double = 0.0
     var elapsedTime: Int = 0
@@ -34,6 +37,12 @@ enum TripLeadAction {
 @Observable
 class TripLeadViewModel: ObservableObject {
     var state: TripLeadState = .init()
+    private let locationService: LocationService
+    private var cancellable: AnyCancellable?
+
+    init(locationService: LocationService) {
+        self.locationService = locationService
+    }
     
     func send(_ action: TripLeadAction) {
         switch action {
@@ -48,6 +57,21 @@ class TripLeadViewModel: ObservableObject {
         case .ZoomLevelChanged(_):
             #warning("Implement zoom level change functionality")
         }
+    }
+    
+    func observeLocationUpdates() {
+        locationService.start()
+        cancellable = locationService.$userLocation.sink { [weak self] location in
+            if let location = location {
+                self?.state.coordinates.append(location.coordinate)
+                self?.state.course = location.course
+//                self?.state.cameraPosition = self?.returnCamera(coordinate: location.coordinate) ?? self!.state.cameraPosition
+            }
+        }
+    }
+    
+    func returnCamera(coordinate: CLLocationCoordinate2D) -> MapCameraPosition {
+        return MapCameraPosition.region(.init(center: coordinate, span: .init(latitudeDelta: 0.01, longitudeDelta: 0.01)))
     }
     
     func getFormattedDistance() -> String {

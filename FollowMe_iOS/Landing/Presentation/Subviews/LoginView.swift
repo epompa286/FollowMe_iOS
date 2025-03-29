@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @ObservedObject var viewModel: LandingViewModel
+    @EnvironmentObject var viewModel: LandingViewModel
 
     var body: some View {
         NavigationStack {
@@ -36,7 +36,7 @@ struct LoginView: View {
             }
             .navigationTitle("Login")
             .sheet(isPresented: $viewModel.state.isRegistrationScreenPresented) {
-                RegistrationView(viewModel: viewModel)
+                RegistrationView()
             }
             .alert(viewModel.state.errorMessage ?? "Unknown Error", isPresented: $viewModel.state.isErrorAlertPresented) {
                 Button("Ok") {
@@ -48,6 +48,6 @@ struct LoginView: View {
 }
 
 #Preview {
-    @Previewable @EnvironmentObject var viewModel: LandingViewModel
-    LoginView(viewModel: viewModel)
+    LoginView()
+        .environmentObject(LandingViewModel())
 }

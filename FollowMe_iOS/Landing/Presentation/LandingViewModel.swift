@@ -38,9 +38,9 @@ final class LandingViewModel: NSObject, ObservableObject, CLLocationManagerDeleg
     private var locationManager: CLLocationManager?
     private var locationContinuation: CheckedContinuation<Bool, Never>?
     
-    let logger = Logger(subsystem: "com.yourcompany.yourapp", category: "network")
+    let logger = Logger(subsystem: "com.pompa.edgar.FollowMe_iOS", category: "LandingViewModel")
     
-    init(repository: FirebaseAuthRepository) {
+    init(repository: FirebaseAuthRepository = FirebaseAuthRepository()) {
         self.auth = repository
     } 
     
@@ -54,7 +54,8 @@ final class LandingViewModel: NSObject, ObservableObject, CLLocationManagerDeleg
     }
     
     private func verifyUserAuthentication() {
-        if state.isUserAuthenticated {
+//        if state.isUserAuthenticated {
+        if true {
             self.state.activeDestination.toggle()
         } else {
             clearState()

@@ -10,7 +10,7 @@ import FirebaseFirestore
 
 typealias Reference = DocumentReference
 typealias Point = TripPoint
-class FirestoreRepository: LocationLeadRepository {
+class FirestoreRepository {
     let db = Firestore.firestore()
     
     func startTrip(email: String, completion: @escaping (Result<DocumentReference, any Error>) -> Void) {

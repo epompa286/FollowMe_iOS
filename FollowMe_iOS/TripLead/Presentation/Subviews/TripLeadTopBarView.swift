@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TripLeadTopBarView: View {
-    @ObservedObject var viewModel: TripLeadViewModel = .init()
+    @EnvironmentObject var viewModel: TripLeadViewModel
     
     var body: some View {
         HStack{
@@ -39,5 +39,6 @@ struct TripLeadTopBarView: View {
 }
 
 #Preview {
-    TripLeadTopBarView()
+    TripLeadStatsBarView()
+        .environmentObject(TripLeadViewModel(locationService: .init()))
 }

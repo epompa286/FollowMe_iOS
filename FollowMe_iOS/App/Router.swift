@@ -23,5 +23,8 @@ struct Router{
     
     func makeTripLeadView() -> some View {
         TripLeadView()
+            .environmentObject(TripLeadViewModel(
+            locationService: dependencies.locationService
+        ))
     }
 }

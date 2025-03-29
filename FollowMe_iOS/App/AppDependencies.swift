@@ -10,8 +10,10 @@ import Foundation
 @MainActor
 final class AppDependencies: ObservableObject {
     let authRepository: FirebaseAuthRepository
+    let locationService: LocationService
     
     init() {
         self.authRepository = FirebaseAuthRepository()
+        self.locationService = LocationService()
     }
 }

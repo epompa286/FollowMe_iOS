@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RegistrationView: View {
-    @ObservedObject var viewModel: LandingViewModel
+    @EnvironmentObject var viewModel: LandingViewModel
     
     var body: some View {
         NavigationStack {
@@ -38,6 +38,7 @@ struct RegistrationView: View {
 }
 
 #Preview {
-    @Previewable @EnvironmentObject var viewModel: LandingViewModel
-    RegistrationView(viewModel: viewModel)
+    RegistrationView()
+        .environmentObject(LandingViewModel())
+
 }

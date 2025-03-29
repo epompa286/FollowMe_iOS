@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseAuth
 
-class FirebaseAuthRepository: AuthRepository {
+class FirebaseAuthRepository{
     typealias _User = FirebaseAuth.User
     var currentUser: FirebaseAuth.User? = nil
     

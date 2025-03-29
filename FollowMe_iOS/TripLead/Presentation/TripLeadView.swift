@@ -9,29 +9,19 @@ import SwiftUI
 import MapKit
 
 struct TripLeadView: View {
-    @StateObject var viewModel: TripLeadViewModel = .init()
-    let walkingRoute: [CLLocationCoordinate2D] = [
-        CLLocationCoordinate2D(latitude: 40.836456,longitude: 14.307014),
-        CLLocationCoordinate2D(latitude: 40.835654,longitude: 14.304346),
-        CLLocationCoordinate2D(latitude: 40.836478,longitude: 14.302593),
-        CLLocationCoordinate2D(latitude: 40.836936,longitude: 14.302464)
-    ]
+    @EnvironmentObject var viewModel: TripLeadViewModel
     
     var body: some View {
         VStack (spacing: 0) {
             ZStack(alignment: .bottom) {
                 ZStack (alignment: .top) {
-                    Map {
-                        MapPolyline(coordinates: walkingRoute)
-                            .stroke(.red, lineWidth: 5)
-                        Marker("Start", coordinate: walkingRoute.first!)
-                            .tint(.green)
-                        Marker("Start", coordinate: walkingRoute.last!)
-                            .tint(.red)
+                    TrackingMapView(coordinates: viewModel.state.coordinates,
+                                    course: viewModel.state.course)
+                    .onAppear {
+                        viewModel.observeLocationUpdates()
                     }
-                    .mapControlVisibility(.hidden)
                     
-                    TripLeadTopBarView(viewModel: viewModel)
+                    TripLeadTopBarView()
                 }
                 
                 HStack{
@@ -46,11 +36,12 @@ struct TripLeadView: View {
                 }
                 .padding([.bottom, .horizontal])
             }
-            TripLeadStatsBarView(viewModel: viewModel)
+            TripLeadStatsBarView()
         }
     }
 }
 
 #Preview {
-    TripLeadView()
+    let router = Router(dependencies: AppDependencies())
+    router.makeTripLeadView()
 }

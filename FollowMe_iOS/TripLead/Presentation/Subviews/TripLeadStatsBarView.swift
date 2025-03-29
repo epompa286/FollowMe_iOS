@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TripLeadStatsBarView: View {
-    @ObservedObject var viewModel: TripLeadViewModel = .init()
+    @EnvironmentObject var viewModel: TripLeadViewModel
     
     var body: some View {
         VStack {
@@ -25,10 +25,12 @@ struct TripLeadStatsBarView: View {
         }
         .padding(.horizontal)
         .frame(maxWidth: .infinity)
-        .background(Color.gray.opacity(0.1))
+        .background(Color.red)
+        .background(.ultraThickMaterial)
     }
 }
 
 #Preview {
     TripLeadStatsBarView()
+        .environmentObject(TripLeadViewModel(locationService: .init()))
 }
